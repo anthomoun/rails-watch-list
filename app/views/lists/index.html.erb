@@ -1,0 +1,10 @@
+<h1>movie's list</h1>
+<ul>
+  <% @lists.each do |list| %>
+  <li>
+  <%= link_to list.name, list_path(list), class: "text-decoration-none" %> 
+  </li>
+  <% end %>
+</ul>
+
+<%= link_to "add a list" , new_list_path(@restaurant) %>
