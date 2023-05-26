@@ -10,7 +10,9 @@
   data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %> </li>
 <% end %></ul>
 
-<%= link_to "Add a bookmark", new_list_bookmark_path(@list) %>
-<%= link_to "Back to my lists", lists_path() %>
+<button type="button" class="btn btn-primary"> Add a movie
+<%= link_to new_list_bookmark_path(@list) %></button>
+<button type="button" class="btn btn-warning">Back to my lists
+<%= link_to lists_path() %></button>
 
 
